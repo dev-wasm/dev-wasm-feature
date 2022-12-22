@@ -1,14 +1,12 @@
 name: "Release dev container features"
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 jobs:
   deploy:
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
+    environment: release
     steps:
       - uses: actions/checkout@v2
       
@@ -18,5 +16,3 @@ jobs:
           publish-features: "true"
           oci-registry: "devwasm.azurecr.io"
           base-path-to-features: "./src"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
