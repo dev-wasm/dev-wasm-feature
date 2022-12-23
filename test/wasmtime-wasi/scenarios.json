@@ -1,0 +1,17 @@
+{
+    "custom_version": {
+        "image": "ubuntu:focal",
+        "features": {
+            "wasmtime-wasi": {
+                "version": "16"
+            }
+        }
+    },
+    "default_version": {
+        "image": "ubuntu:jammy",
+        "features": {
+            "wasmtime-wasi": {
+            }
+        }
+    }
+}

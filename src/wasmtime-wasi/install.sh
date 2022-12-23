@@ -11,10 +11,14 @@ FILE="wasi-sdk-${WASI_VERSION_FULL}-linux.tar.gz"
 # Maybe install curl
 which curl > /dev/null || (apt update && apt install curl -y -qq)
 
+# Maybe install xz
+which xz > /dev/null || (apt update && apt install xz-utils -y -qq)
+
+apt install libc6
+
 # Install wasmtime
 curl https://wasmtime.dev/install.sh -sSf | bash
-
-echo https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-${WASI_VERSION}/${FILE}
+ln -s ${HOME}/.wasmtime/bin/wasmtime /usr/bin/wasmtime
 
 # Install wasi-sdk
 curl https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-${WASI_VERSION}/${FILE} -L --output ${FILE}

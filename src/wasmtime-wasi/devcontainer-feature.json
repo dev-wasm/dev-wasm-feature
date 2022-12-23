@@ -1,6 +1,6 @@
 {
     "id": "wasmtime-wasi",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "name": "Wasmtime runtime and WASI SDK",
     "documentationURL": "https://github.com/dev-wasm/dev-wasm-feature",
     "description": "Installs the wasmtime runtime for WebAssembly and the WebAssembly System Interface (WASI) SDK",
@@ -24,5 +24,8 @@
             "description": "Install location for the WASI SDK"
         }
     },
-    "mounts": []
+    "mounts": [],
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
 }
