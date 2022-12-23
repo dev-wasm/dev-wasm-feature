@@ -20,5 +20,5 @@ echo https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-${WASI_V
 curl https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-${WASI_VERSION}/${FILE} -L --output ${FILE}
 
 # Install to location
-tar -C ${WASI_LOCATION} -xvf   ${FILE}
+tar -C ${WASI_LOCATION} -xvf ${FILE}
 rm ${FILE}
