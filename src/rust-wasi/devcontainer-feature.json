@@ -1,0 +1,12 @@
+{
+    "id": "rust-wasi",
+    "version": "0.0.1",
+    "name": "wasm + wasi for Rust",
+    "documentationURL": "https://github.com/dev-wasm/dev-wasm-feature",
+    "description": "Installs the web assumbly target for rust",
+    "options": {},
+    "mounts": [],
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/rust"
+    ]
+}

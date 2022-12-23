@@ -1,0 +1,10 @@
+{
+    "default": {
+        "image": "ubuntu:jammy",
+        "features": {
+            "rust-wasi": {},
+            "wasmtime-wasi": {},
+            "ghcr.io/devcontainers/features/rust": {}
+        }
+    }
+}
