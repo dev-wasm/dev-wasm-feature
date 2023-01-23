@@ -14,7 +14,7 @@ jobs:
         uses: devcontainers/action@v1
         with:
           publish-features: "true"
-          oci-registry: "devwasm.azurecr.io"
           base-path-to-features: "./src"
+          generate-docs: "true"
         env:
           DEVCONTAINERS_OCI_AUTH: ${{ secrets.DEVCONTAINERS_OCI_AUTH }}
