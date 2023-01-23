@@ -6,15 +6,15 @@ jobs:
   deploy:
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
-    environment: release
     steps:
       - uses: actions/checkout@v2
-      
-      - name: "Publish"
+
+      - name: "Publish Features"
         uses: devcontainers/action@v1
         with:
           publish-features: "true"
           base-path-to-features: "./src"
           generate-docs: "true"
+          
         env:
-          DEVCONTAINERS_OCI_AUTH: ${{ secrets.DEVCONTAINERS_OCI_AUTH }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
