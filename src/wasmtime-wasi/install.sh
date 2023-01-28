@@ -18,7 +18,7 @@ apt install libc6
 
 # Install wasmtime
 curl https://wasmtime.dev/install.sh -sSf | bash
-ln -s ${HOME}/.wasmtime/bin/wasmtime /usr/bin/wasmtime
+cp ${HOME}/.wasmtime/bin/wasmtime /usr/bin/wasmtime
 
 # Install wasi-sdk
 curl https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-${WASI_VERSION}/${FILE} -L --output ${FILE}
