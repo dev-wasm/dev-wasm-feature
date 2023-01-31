@@ -18,4 +18,5 @@ jobs:
           base-path-to-features: "./src"
           disable-repo-tagging: "true"
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEVCONTAINERS_OCI_AUTH: ${{ secrets.DEVCONTAINERS_OCI_AUTH }}
