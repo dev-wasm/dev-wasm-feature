@@ -16,5 +16,6 @@ jobs:
           publish-features: "true"
           oci-registry: "devwasm.azurecr.io"
           base-path-to-features: "./src"
+          disable-repo-tagging: "true"
         env:
           DEVCONTAINERS_OCI_AUTH: ${{ secrets.DEVCONTAINERS_OCI_AUTH }}
