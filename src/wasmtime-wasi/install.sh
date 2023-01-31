@@ -26,3 +26,6 @@ curl https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-${WASI_V
 # Install to location
 tar -C ${WASI_LOCATION} -xvf ${FILE}
 rm ${FILE}
+
+# Install lighttpd for web serving
+apt install lighttpd
