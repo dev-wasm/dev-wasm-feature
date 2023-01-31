@@ -1,9 +1,9 @@
 {
     "id": "rust-wasi",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "wasm + wasi for Rust",
     "documentationURL": "https://github.com/dev-wasm/dev-wasm-feature",
-    "description": "Installs the web assumbly target for rust",
+    "description": "Installs the web assembly target for rust",
     "options": {},
     "mounts": [],
     "installsAfter": [
