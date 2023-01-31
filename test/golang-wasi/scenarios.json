@@ -1,0 +1,10 @@
+{
+    "default": {
+        "image": "ubuntu:jammy",
+        "features": {
+            "golang-wasi": {},
+            "wasmtime-wasi": {},
+            "ghcr.io/devcontainers/features/go": {}
+        }
+    }
+}
