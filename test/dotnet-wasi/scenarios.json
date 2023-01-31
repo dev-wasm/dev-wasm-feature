@@ -1,0 +1,10 @@
+{
+    "default": {
+        "image": "ubuntu:jammy",
+        "features": {
+            "dotnet-wasi": {},
+            "wasmtime-wasi": {},
+            "ghcr.io/devcontainers/features/dotnet": {}
+        }
+    }
+}

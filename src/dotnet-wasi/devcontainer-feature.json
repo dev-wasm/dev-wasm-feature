@@ -1,0 +1,12 @@
+{
+    "id": "dotnet-wasi",
+    "version": "0.0.1",
+    "name": "wasm + wasi for Dotnet",
+    "documentationURL": "https://github.com/dev-wasm/dev-wasm-feature",
+    "description": "Installs the web assembly target for Dotnet",
+    "options": {},
+    "mounts": [],
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/dotnet"
+    ]
+}
