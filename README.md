@@ -24,8 +24,8 @@ More languages coming soon.
     },
     "customizations": {
         "vscode": {
-	          "extensions": [ "ms-vscode.cpptools-extension-pack" ]
-	      }
+	     "extensions": [ "ms-vscode.cpptools-extension-pack" ]
+	}
     }
 }
 ```
@@ -47,9 +47,8 @@ More languages coming soon.
     },
     "customizations": {
 	"vscode": {
-		"extensions": [
-			"ms-vscode.cpptools"
-		]
+	    "extensions": [ "ms-vscode.cpptools" ]
+	}
     }
 }
 ```
