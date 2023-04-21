@@ -14,7 +14,7 @@ int main() {
 EOF
 
 # Definition specific tests
-check "compiles" /usr/local/lib/wasi-sdk-17.0/bin/clang -o hello.wasm hello.c
+check "compiles" /usr/local/lib/wasi-sdk-20.0/bin/clang -o hello.wasm hello.c
 check "runs" wasmtime hello.wasm | grep "Hello devcontainers from C"
 
 # Report result
