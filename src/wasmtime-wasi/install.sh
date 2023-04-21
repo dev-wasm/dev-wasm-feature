@@ -14,7 +14,7 @@ which curl > /dev/null || (apt update && apt install curl -y -qq)
 # Maybe install xz
 which xz > /dev/null || (apt update && apt install xz-utils -y -qq)
 
-apt install libc6
+apt install -y -qq libc6
 
 # Install wasmtime
 curl https://wasmtime.dev/install.sh -sSf | bash
