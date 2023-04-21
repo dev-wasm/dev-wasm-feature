@@ -28,4 +28,4 @@ tar -C ${WASI_LOCATION} -xvf ${FILE}
 rm ${FILE}
 
 # Install lighttpd for web serving
-apt install lighttpd
+apt install -y -qq lighttpd
