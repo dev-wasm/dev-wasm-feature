@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-WASI_VERSION="${VERSION:-"17"}"
+WASI_VERSION="${VERSION:-"20"}"
 WASI_VERSION_FULL="${WASI_VERSION}.0"
 WASI_LOCATION=${LOCATION:-"/usr/local/lib"}
 
