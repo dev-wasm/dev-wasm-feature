@@ -20,9 +20,11 @@
         "wit_version": {
             "type": "string",
             "proposals": [
-                "0.4.0"
+                "0.4.0",
+                "0.8.0",
+                "0.9.0",
             ],
-            "default": "0.4.0",
+            "default": "0.8.0",
             "description": "Select or enter a WIT version to install"
         },
         "location": {
