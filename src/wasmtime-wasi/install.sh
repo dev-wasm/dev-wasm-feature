@@ -4,7 +4,7 @@ set -e
 WASI_VERSION="${VERSION:-"20"}"
 WASI_VERSION_FULL="${WASI_VERSION}.0"
 WIT_VERSION="${WIT_VERSION:-"0.4.0"}"
-WASMTIME_VERSION="${WASMTIME_VERSION:-"9.0.4"
+WASMTIME_VERSION="${WASMTIME_VERSION:-"v9.0.4"}"
 WASI_LOCATION=${LOCATION:-"/usr/local/lib"}
 
 # TODO: Support Windows someday?
@@ -19,9 +19,10 @@ which xz > /dev/null || (apt update && apt install xz-utils -y -qq)
 apt install -y -qq libc6
 
 # Install wasmtime
-curl https://wasmtime.dev/install.sh -L --output install.sh
-chmod a+x install.sh
-./install.sh --version ${WASMTIME_VERSION}
+INSTALLER=./wasmtime-install.sh
+curl https://wasmtime.dev/install.sh -L --output ${INSTALLER}
+chmod a+x ${INSTALLER}
+${INSTALLER} --version ${WASMTIME_VERSION}
 cp ${HOME}/.wasmtime/bin/wasmtime /usr/bin/wasmtime
 
 # Install wasi-sdk

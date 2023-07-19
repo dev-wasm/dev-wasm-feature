@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-TINY_GO_VERSION="${VERSION:-"0.26.0"}"
+TINY_GO_VERSION="${VERSION:-"0.28.1"}"
 
 # Maybe install curl
 which curl > /dev/null || (apt update && apt install curl -y -qq)
