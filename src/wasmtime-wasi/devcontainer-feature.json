@@ -17,6 +17,16 @@
             "default": "20",
             "description": "Select or enter a WASI SDK Version to install"
         },
+        "wasmtime_version": {
+            "type": "string",
+            "proposals": [
+                "9.0.4",
+                "10.0.1",
+                "11.0.1",
+            ],
+            "default": "9.0.4",
+            "description": "The version of wasmtime runtime to install"
+        },
         "wit_version": {
             "type": "string",
             "proposals": [
