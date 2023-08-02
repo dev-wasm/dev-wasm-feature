@@ -11,10 +11,10 @@ WASI_LOCATION=${LOCATION:-"/usr/local/lib"}
 FILE="wasi-sdk-${WASI_VERSION_FULL}-linux.tar.gz"
 
 # Maybe install curl
-which curl > /dev/null || (apt update && apt install curl -y -qq)
+which curl > /dev/null || (apt update -y && apt install curl -y -qq)
 
 # Maybe install xz
-which xz > /dev/null || (apt update && apt install xz-utils -y -qq)
+which xz > /dev/null || (apt update -y && apt install xz-utils -y -qq)
 
 apt install -y -qq libc6
 
@@ -41,4 +41,4 @@ cp wit-bindgen-v${WIT_VERSION}-x86_64-linux/wit-bindgen ${LOCATION}/wit-bindgen
 rm -r wit-bindgen-v${WIT_VERSION}-x86_64-linux*
 
 # Install lighttpd for web serving
-apt install -y -qq lighttpd
+DEBIAN_FRONTEND=noninteractive TZ=America/Los_Angeles apt install -y -qq lighttpd
