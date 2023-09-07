@@ -1,6 +1,6 @@
 {
     "id": "golang-wasi",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "wasm + wasi for Go",
     "documentationURL": "https://github.com/dev-wasm/dev-wasm-feature",
     "description": "Installs the web assembly target for Go",
@@ -8,10 +8,12 @@
         "version": {
             "type": "string",
             "proposals": [
+                "0.29.0",
+                "0.28.1",
                 "0.26.0",
                 "0.25.0"
             ],
-            "default": "0.26.0",
+            "default": "0.29.0",
             "description": "Select or enter a WASI SDK Version to install"
         }
     },
