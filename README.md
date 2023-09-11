@@ -4,6 +4,7 @@ A feature for devcontainers that installs wasmtime and the wasi-sdk and language
 Currently supports:
 * C/C++
 * Rust
+* Golang
 
 More languages coming soon.
 
@@ -52,4 +53,3 @@ More languages coming soon.
     }
 }
 ```
-

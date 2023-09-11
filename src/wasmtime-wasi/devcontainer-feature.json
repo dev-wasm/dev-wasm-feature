@@ -1,6 +1,6 @@
 {
     "id": "wasmtime-wasi",
-    "version": "0.0.11",
+    "version": "0.0.12",
     "name": "Wasmtime runtime and WASI SDK",
     "documentationURL": "https://github.com/dev-wasm/dev-wasm-feature",
     "description": "Installs the wasmtime runtime for WebAssembly and the WebAssembly System Interface (WASI) SDK",
@@ -22,7 +22,8 @@
             "proposals": [
                 "v9.0.4",
                 "v10.0.1",
-                "v11.0.1"
+                "v11.0.1",
+                "v12.0.1"
             ],
             "default": "v9.0.4",
             "description": "The version of wasmtime runtime to install"
@@ -32,7 +33,9 @@
             "proposals": [
                 "0.4.0",
                 "0.8.0",
-                "0.9.0"
+                "0.9.0",
+                "0.10.0",
+                "0.11.0"
             ],
             "default": "0.8.0",
             "description": "Select or enter a WIT version to install"
