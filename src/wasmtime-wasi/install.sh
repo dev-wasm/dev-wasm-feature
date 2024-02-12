@@ -49,5 +49,3 @@ tar -xvzf wasm-tools-${WASM_TOOLS_VERSION}-x86_64-linux.tar.gz
 cp wasm-tools-${WASM_TOOLS_VERSION}-x86_64-linux/wasm-tools ${LOCATION}/bin/wasm-tools
 rm -r wasm-tools-${WASM_TOOLS_VERSION}-x86_64-linux*
 
-# Install lighttpd for web serving
-DEBIAN_FRONTEND=noninteractive TZ=America/Los_Angeles apt install -y -qq lighttpd
