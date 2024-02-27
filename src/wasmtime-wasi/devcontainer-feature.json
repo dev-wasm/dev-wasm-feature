@@ -1,6 +1,6 @@
 {
     "id": "wasmtime-wasi",
-    "version": "0.0.14",
+    "version": "0.0.15",
     "name": "Wasmtime runtime and WASI SDK",
     "documentationURL": "https://github.com/dev-wasm/dev-wasm-feature",
     "description": "Installs the wasmtime runtime for WebAssembly and the WebAssembly System Interface (WASI) SDK",
