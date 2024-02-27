@@ -34,12 +34,12 @@ tar -C ${WASI_LOCATION} -xvf ${FILE}
 rm ${FILE}
 
 # Install wit-bindgen
-curl https://github.com/bytecodealliance/wit-bindgen/releases/download/wit-bindgen-cli-${WIT_VERSION}/wit-bindgen-v${WIT_VERSION}-x86_64-linux.tar.gz -L --output wit-bindgen-v${WIT_VERSION}-x86_64-linux.tar.gz
+curl https://github.com/bytecodealliance/wit-bindgen/releases/download/v${WIT_VERSION}/wit-bindgen-${WIT_VERSION}-x86_64-linux.tar.gz -L --output wit-bindgen-${WIT_VERSION}-x86_64-linux.tar.gz
 
 # Install to location
-tar -xvzf wit-bindgen-v${WIT_VERSION}-x86_64-linux.tar.gz
-cp wit-bindgen-v${WIT_VERSION}-x86_64-linux/wit-bindgen ${LOCATION}/bin/wit-bindgen
-rm -r wit-bindgen-v${WIT_VERSION}-x86_64-linux*
+tar -xvzf wit-bindgen-${WIT_VERSION}-x86_64-linux.tar.gz
+cp wit-bindgen-${WIT_VERSION}-x86_64-linux/wit-bindgen ${LOCATION}/bin/wit-bindgen
+rm -r wit-bindgen-${WIT_VERSION}-x86_64-linux*
 
 # Install wasm-tools
 curl https://github.com/bytecodealliance/wasm-tools/releases/download/wasm-tools-${WASM_TOOLS_VERSION}/wasm-tools-${WASM_TOOLS_VERSION}-x86_64-linux.tar.gz -L --output wasm-tools-${WASM_TOOLS_VERSION}-x86_64-linux.tar.gz
