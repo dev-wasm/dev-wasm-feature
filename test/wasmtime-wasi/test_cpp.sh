@@ -27,7 +27,7 @@ int main(int argc, char** argv)
 EOF
 
 # Definition specific tests
-check "compiles" /usr/local/lib/wasi-sdk-20.0/bin/clang++ -o hello.wasm hello.cpp
+check "compiles" /usr/local/lib/wasi-sdk-24.0-x86_64-linux/bin/clang++ -o hello.wasm hello.cpp
 check "runs" wasmtime hello.wasm | grep "Hello C++ World!"
 
 # Report result

@@ -3,7 +3,7 @@
         "image": "ubuntu:focal",
         "features": {
             "wasmtime-wasi": {
-                "version": "16"
+                "version": "23"
             }
         }
     },

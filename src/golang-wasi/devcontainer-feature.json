@@ -8,13 +8,12 @@
         "version": {
             "type": "string",
             "proposals": [
-                "0.29.0",
-                "0.28.1",
-                "0.26.0",
-                "0.25.0"
+                "0.33.0",
+                "0.32.1",
+                "0.31.2"
             ],
-            "default": "0.29.0",
-            "description": "Select or enter a WASI SDK Version to install"
+            "default": "0.33.0",
+            "description": "Select or enter a TinyGo Version to install"
         }
     },
     "mounts": [],

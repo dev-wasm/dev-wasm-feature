@@ -8,5 +8,8 @@
     "mounts": [],
     "installsAfter": [
         "ghcr.io/devcontainers/features/dotnet"
-    ]
+    ],
+    "containerEnv": {
+        "WASI_SDK_PATH": "/usr/local/lib/wasi-sdk-24.0-x86_64-linux"
+    }
 }

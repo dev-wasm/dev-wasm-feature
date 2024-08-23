@@ -6,7 +6,9 @@ set -e
 source dev-container-features-test-lib
 
 cat << EOF > hello.go
-import fmt
+package main
+
+import "fmt"
 
 func main() {
     fmt.Println("Hello Go!")
@@ -14,7 +16,7 @@ func main() {
 EOF
 
 # Definition specific tests
-check "compiles" tinygo build -wasm-abi=generic -target=wasi -o hello.wasm hello.go
+check "compiles" tinygo build -target=wasip1 -o hello.wasm hello.go
 check "runs" wasmtime hello.wasm | grep "Hello Go!"
 
 # Report result

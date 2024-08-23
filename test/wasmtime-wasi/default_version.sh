@@ -7,8 +7,8 @@ source dev-container-features-test-lib
 
 # Definition specific tests
 check "version" wasmtime --version
-check "if wasi-sdk exists" ls /usr/local/lib/wasi-sdk-20.0
-check "clang" /usr/local/lib/wasi-sdk-20.0/bin/clang --version | grep wasi
+check "if wasi-sdk exists" ls /usr/local/lib/wasi-sdk-24.0-x86_64-linux
+check "clang" /usr/local/lib/wasi-sdk-24.0-x86_64-linux/bin/clang --version | grep wasi
 
 # Report result
 reportResults

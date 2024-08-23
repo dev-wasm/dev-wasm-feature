@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
 set -e
 
-WASI_VERSION="${VERSION:-"20"}"
+WASI_VERSION="${VERSION:-"24"}"
 WASI_VERSION_FULL="${WASI_VERSION}.0"
 WIT_VERSION="${WIT_VERSION:-"0.4.0"}"
 WASMTIME_VERSION="${WASMTIME_VERSION:-"v9.0.4"}"
 WASM_TOOLS_VERSION="${WASM_TOOLS_VERSION:-"1.0.54"}"
 WASI_LOCATION="${LOCATION:-"/usr/local"}/lib"
+ARCH="x86_64"
 
 # TODO: Support Windows someday?
-FILE="wasi-sdk-${WASI_VERSION_FULL}-linux.tar.gz"
+# TODO: Support other architectures?
+FILE="wasi-sdk-${WASI_VERSION_FULL}-${ARCH}-linux.tar.gz"
 
 # Maybe install curl
 which curl > /dev/null || (apt update -y && apt install curl -y -qq)
@@ -42,7 +44,7 @@ cp wit-bindgen-${WIT_VERSION}-x86_64-linux/wit-bindgen ${LOCATION}/bin/wit-bindg
 rm -r wit-bindgen-${WIT_VERSION}-x86_64-linux*
 
 # Install wasm-tools
-curl https://github.com/bytecodealliance/wasm-tools/releases/download/wasm-tools-${WASM_TOOLS_VERSION}/wasm-tools-${WASM_TOOLS_VERSION}-x86_64-linux.tar.gz -L --output wasm-tools-${WASM_TOOLS_VERSION}-x86_64-linux.tar.gz
+curl https://github.com/bytecodealliance/wasm-tools/releases/download/v${WASM_TOOLS_VERSION}/wasm-tools-${WASM_TOOLS_VERSION}-x86_64-linux.tar.gz -L --output wasm-tools-${WASM_TOOLS_VERSION}-x86_64-linux.tar.gz
 
 # Install to location
 tar -xvzf wasm-tools-${WASM_TOOLS_VERSION}-x86_64-linux.tar.gz
