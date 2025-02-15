@@ -7,4 +7,4 @@ if ! which rustup > /dev/null; then
     source $HOME/.cargo/env
 fi
 
-rustup target add wasm32-wasi
+rustup target add wasm32-wasip1
